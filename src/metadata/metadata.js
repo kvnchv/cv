@@ -2,11 +2,11 @@ module.exports = {
   name: 'Kevin Chu',
   title: 'Graduate Research Assistant',
   facts: {
-    'Location': '<a href="https://goo.gl/maps/Y6UFDoKUzR5s1SMo8"><i class="fas fa-map-marker-alt"></i>Atlanta, GA</a>',
-    'Email': '<a href="mailto:kchu41@gatech.edu"><i class="fa fa-envelope" aria-hidden="true"></i>kchu41@gatech.edu</a>',
-    'Google Scholar': '<a href="https://scholar.google.com/citations?user=HJXYzrYAAAAJ&hl=en"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Kevin Chu</a>',
-    'LinkedIn': '<a href="https://linkedin.com/in/chukgatech/"><i class="fab fa-linkedin fact-icon"></i>Kevin Chu</a>',
-    'GitHub': '<a href="https://github.com/kvnchv/"><i class="fab fa-github fact-icon"></i>kvnchv</a>'
+    'Location': '<a href="https://goo.gl/maps/Y6UFDoKUzR5s1SMo8"><i class="fa fa-fw fa-map-marker-alt"></i>Atlanta, GA</a>',
+    'Email': '<a href="mailto:kchu41@gatech.edu"><i class="fa fa-fw fa-envelope"></i>kchu41@gatech.edu</a>',
+    'Google Scholar': '<a href="https://scholar.google.com/citations?user=HJXYzrYAAAAJ&hl=en"><i class="fa fa-fw fa-graduation-cap"></i>Kevin Chu</a>',
+    'LinkedIn': '<a href="https://linkedin.com/in/chukgatech/"><i class="fab fa-fw fa-linkedin fact-icon"></i>Kevin Chu</a>',
+    'GitHub': '<a href="https://github.com/kvnchv/"><i class="fab fa-fw fa-github fact-icon"></i>kvnchv</a>'
   },
   skills: [
     ['Software Development', '++++'],
