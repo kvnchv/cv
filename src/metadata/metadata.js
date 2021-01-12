@@ -1,68 +1,86 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: 'Kevin Chu',
+  title: 'Graduate Research Assistant',
   facts: {
-    'Residence': 'London',
-    'Homepage': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <span class="print">https://en.wikipedia.org/wiki/William_Shakespeare</span>
-                  <span class="screen">wiki</span>
-                </a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com">wil64@yahoo.com</a>'
+    'Location': '<a href="https://goo.gl/maps/Y6UFDoKUzR5s1SMo8"><i class="fas fa-map-marker-alt"></i>Atlanta, GA</a>',
+    'Email': '<a href="mailto:kchu41@gatech.edu"><i class="fa fa-envelope" aria-hidden="true"></i>kchu41@gatech.edu</a>',
+    'Google Scholar': '<a href="https://scholar.google.com/citations?user=HJXYzrYAAAAJ&hl=en"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Kevin Chu</a>',
+    'LinkedIn': '<a href="https://linkedin.com/in/chukgatech/"><i class="fab fa-linkedin fact-icon"></i>Kevin Chu</a>',
+    'GitHub': '<a href="https://github.com/kvnchv/"><i class="fab fa-github fact-icon"></i>kvnchv</a>'
   },
   skills: [
-    ['Comedy', '++++'],
-    ['Love', '++++'],
-    ['Theater', '++++'],
-    ['Tragedy', '++++'],
-    ['Poetry', '++++'],
-    ['Erotic', '+++'],
-    ['Sonnets', '++++'],
-    ['Plays', '++++'],
-    ['Writing', '++++'],
-    ['Directing', '+++'],
-    ['Literature', '++++'],
-    ['Influence', '++++'],
+    ['Software Development', '++++'],
+    ['Computational Materials Science', '++++']
   ],
-  plays: [
+  jobs: [
     {
-      title: 'Hamlet',
-      written: 'Likely early 17th century',
-      badges: ['tragedy', 'philosophy', 'death'],
+      institution: 'Georgia Institute of Technology',
+      location: 'Atlanta, GA',
+      position: 'Graduate Research Assistant - David L. McDowell Group',
+      date: 'Aug 2018 - Present',
+      badges: ['education', 'lammps','hpc', 'python', 'c++', 'fortran'],
       contents: `
-Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether it is right for him to take revenge, Hamlet, along with almost all the other major characters, is killed.
+I design and execute multiscale modeling experiments using LAMMPS and custom simulation codes to elucidate novel nanoscale deformation mechanisms in multicomponent alloys. 
+This comprises:
+
+* software development activities to improve or extend existing methods relevant to the [Concurrent Atomistic-Continuum (CAC)](http://pycac.org) method
+* co-development of [LAMMPS-CAC](https://github.com/kvnchv/lammps) integration and validation
+* simulation/analysis pipelining using a combination of shell and Python scripted workflows, interfacing with high performance computing clusters
+* compilation of resultant data for the writing of manuscripts.
 `
     },
     {
-      title: 'Twelfth Night',
-      written: '1600 – 1601',
-      badges: ['comedy', 'love'],
+      institution: 'Sandia National Laboratories',
+      location: 'Livermore, CA',
+      position: 'Research & Development Graduate Intern',
+      date: 'May 2019 - Aug 2019',
+      badges: ['lammps', 'matlab', 'python', 'hpc'], 
       contents: `
-Viola finds herself shipwrecked in Illyria and, assuming that her brother Sebastian has died in the wreck, disguises herself as a man to gain a position in Duke Orsino's court. Orsino sends Viola (whom he knows as Cesario) to deliver a message to his love, Olivia. Olivia, however, dislikes the Duke. She falls in love with Viola, who she thinks is a man. Eventually, Viola's brother Sebastian, who in fact was unharmed in the wreck, reappears. At a critical moment, Viola's true identity is revealed when members of the court notice the similarities between her and Sebastian. Olivia quickly falls in love with Sebastian, and Viola confesses her love for the Duke.
+Executed molecular dynamics modeling and data analysis activities to support the following projects: 
+
+* Cottrell atomosphere formation kinetics
+* large scale dislocation mobility analysis in 3XX stainless steels
+
+Highlights include the development/implementation of a continuum-scale diffusion model and
+fully pipelined execution and analysis of multi-parameter space molecular dynamics simulations.
 `
     },
     {
-      title: 'The Tragedy of Romeo and Juliet',
-      written: '1595–1596, with a possible early draft written in 1591',
-      badges: ['tragedy', 'death', 'love'],
+      institution: 'Sandia National Laboratories',
+      location: 'Livermore, CA',
+      position: 'Undergraduate Research Intern',
+      date: 'May 2017 - Aug 2017',
+      badges: ['lammps', 'hpc'], 
       contents: `
-In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
+
+* Analyzed existing datasets from molecular dynamics simulations of InGaN film deposition to investigate threading dislocation nucleation mechanisms 
+and derived critical film thickness relations and parameters.
+* Designed and executed simulations to validate melting temperature of newly developed interatomic potentials 
+* Developed presentations for further internal dissemination and produced a number of visualizations for publication.
+`
+    },
+    {
+      institution: 'University of California, Los Angeles',
+      location: 'Los Angeles, CA',
+      position: 'Undergraduate Research Assistant - Jaime Marian Group',
+      date: 'Mar 2016 - May 2017',
+      badges: ['c++', 'matlab'], 
+      contents: `I assisted with general research tasks relating to computational materials analysis and modelling. 
+      Projects included translation of existing calculation/tools from Matlab into C++ (two temperature model, Green’s function, and Lennard-Jones potential calculations)
 `
     }
   ],
-  experience: [
+  publications: [
     {
-      header: 'Performance',
-      skills: ['theater', 'play'],
+      // title: 'Polymorphic improvement of Stillinger-Weber potential for InGaN.',
       contents: `
-Thousands of performances of my plays have been staged since the end of the 16th century. Many of my greatest plays were performed by the Lord Chamberlain's Men and King's Men acting companies at the [Globe](https://en.wikipedia.org/wiki/Globe_Theatre) and Blackfriars Theatres.
-`
-    },
-    {
-      header: 'Poetry',
-      skills: ['poetry', 'erotic'],
-      contents: `
-In 1593 and 1594, when the theatres were closed because of plague, I published two narrative poems on sexual themes, Venus and Adonis and The Rape of Lucrece. He dedicated them to Henry Wriothesley, Earl of Southampton.
-`
+### 2020
+* Chu, K., Foster, M. E., Sills, R. B., Zhou, X., Zhu, T., & McDowell, D. L. (2020). Temperature and composition dependent screw dislocation mobility in austenitic stainless steels from large-scale molecular dynamics. npj Computational Materials, 6(1), 1-10.
+* Spataru, C.D., Chu, K., Sills, R.B. Zhou, X. (2020). Molecular Statics Analyses of Thermodynamics and Kinetics of Hydrogen Cottrell Atmosphere Formation Around Edge Dislocations in Aluminum. JOM 72, 3020–3027 .
+### 2018
+* Chu, K., Gruber, J., Zhou, X. W., Jones, R. E., Lee, S. R., & Tucker, G. J. (2018). Molecular dynamics studies of InGaN growth on nonpolar (11 2¯ 0) GaN surfaces. Physical Review Materials, 2(1), 013402.
+### 2017
+* Zhou, X. W., Jones, R. E., & Chu, K. (2017). Polymorphic improvement of Stillinger-Weber potential for InGaN. Journal of Applied Physics, 122(23), 235703.`
     }
   ]
 };

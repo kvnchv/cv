@@ -6,7 +6,7 @@
     <title>{{ name }}. {{ title }}</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <h3 class="screen">Skills</h3>
+    <!-- <h3 class="screen">Skills</h3>
     <div class="row mb-4">
         {{#each skills}}
         <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
@@ -43,21 +43,38 @@
             {{ this.[1] }}
         </div>
         {{/each}}
-    </div>
-
+    </div> -->
+    <h3 class="screen">About</h3>
     <p>
-        English poet, playwright and actor, widely regarded as the greatest writer in the English language
-        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-        two long narrative poems and a few other verses, some of uncertain authorship.
+        I am a graduate research assistant pursuing my PhD in Materials Science under <a href="http://me.gatech.edu/faculty/mcdowell">Dr. David L. McDowell</a> 
+        at the Georgia Institute of Technology. My expertiee lies in physics-based atomistic and coarse-grained atomistic modeling of multicomponent alloys and 
+        fundamental deformation processes at the nanoscale. 
     </p>
 
-    <h2>Professional Experience</h2>
-    {{#each plays}}
+    
+    <h2>Publications</h2>
+
+    {{#each publications}}
+    <div class="card mt-4">
+        <div class="card-body">
+            {{{markdown contents }}}
+        </div>
+    </div>
+
+    {{/each}}
+
+
+    <h2>Research Experience</h2>
+    {{#each jobs}}
     <div class="card mb-4">
         <div class="card-body">
-            <h3>{{ title }}</h3>
-            <p class="text-muted">{{ written }}</p>
+            <h3>{{ institution }}
+                <small>
+                    {{ location }}
+                </small>
+            </h3>
+            <p>{{ position }}</p>
+            <p class="text-muted">{{ date }}</p>
 
             {{{markdown contents }}}
 
@@ -71,25 +88,17 @@
     {{/each}}
 
     <h2>Education</h2>
-    <p>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</p>
+    <p>
+    <ul>
+        <li>
+            <b>Georgia Institute of Technology</b> -- PhD Materials Science and Engineering (Expected 2022)
+        </li>
+        <li>
+            <b>University of California, Los Angeles</b> -- B.S. Materials Science and Engineering 2017</p>
+        </li>
+    </ul>
 
-    <h2>Additional Experience</h2>
 
-    {{#each experience}}
-    <div class="card mt-4">
-        <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
-
-            {{{markdown contents }}}
-
-            <div>
-                {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
-        </div>
-    </div>
-    {{/each}}
 </div>
 </body>
 </html>
