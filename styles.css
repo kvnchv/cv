@@ -57,8 +57,10 @@
         font-weight: 500;
     }
 }
-
-a .fa {
+.far,
+.fab,
+.fas,
+.fa {
     text-decoration: none !important;
     margin-right: 5px;
 }
