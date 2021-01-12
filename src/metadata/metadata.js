@@ -1,6 +1,7 @@
 module.exports = {
   name: 'Kevin Chu',
-  title: 'Graduate Research Assistant',
+  title: 'PhD Candidate',
+  dept: 'Materials Science - Georgia Tech',
   facts: {
     'Location': '<a href="https://goo.gl/maps/Y6UFDoKUzR5s1SMo8"><i class="fa fa-fw fa-map-marker-alt"></i>Atlanta, GA</a>',
     'Email': '<a href="mailto:kchu41@gatech.edu"><i class="fa fa-fw fa-envelope"></i>kchu41@gatech.edu</a>',
@@ -70,9 +71,13 @@ and derived critical film thickness relations and parameters.
 `
     }
   ],
+  presentations: [
+    {
+      contents: 'Chu, K., Chen, D., Diaz, A., Selimov, A., Chen, Y., Zhu, T., McDowell, D. (2019). *Application of the concurrent atomistic-continuum (CAC) method to dislocation reaction pathway modeling in FCC metals.* at Materials Science and Technology, Portland, OR',
+    }
+  ],
   publications: [
     {
-      // title: 'Polymorphic improvement of Stillinger-Weber potential for InGaN.',
       contents: `
 ### 2020
 * Chu, K., Foster, M. E., Sills, R. B., Zhou, X., Zhu, T., & McDowell, D. L. (2020). Temperature and composition dependent screw dislocation mobility in austenitic stainless steels from large-scale molecular dynamics. npj Computational Materials, 6(1), 1-10.

@@ -12,8 +12,8 @@
 <body>
 <div class="container page">
     <div class="row">
-        <div class="col-md-6 col-print-6">
-            <h1>{{ name }}<br/>{{ title }}</h1>
+        <div class="col-md-7 col-print-7">
+            <h1>{{ name }}, {{ title }} <br/>{{ dept }}</h1>
             <p>
                 <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
             </p>
@@ -23,11 +23,11 @@
                     class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
             </p>
         </div>
-        <div class="col-md-6 col-print-6">
+        <div class="col-md-5 col-print-5">
             <dl class="row">
                 {{#each facts}}
-                <dt class="col-md-3">{{ @key }}</dt>
-                <dd class="col-md-9">{{{ this }}}</dd>
+                <dt class="col-md-4">{{ @key }}</dt>
+                <dd class="col-md-8">{{{ this }}}</dd>
                 {{/each}}
             </dl>
         </div>
@@ -44,16 +44,33 @@
         </div>
         {{/each}}
     </div> -->
-    <h3 class="screen">About</h3>
+    <div class="row">
+        <div class="col-md-2 col-print-2">
+            <img src="3358071.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-10 col-print-10">
+            <h3 class="screen">About me</h3>
+            <p>
+                I am a graduate research assistant pursuing my PhD in Materials Science under <a href="http://me.gatech.edu/faculty/mcdowell">Dr. David L. McDowell</a> 
+                at the Georgia Institute of Technology. My expertise lies in molecular dynamics and scientific software development. My research focuses primarily on physics-based atomistic and coarse-grained atomistic modeling of multicomponent alloys and 
+                fundamental deformation processes at the nanoscale. 
+            </p>
+        </div>  
+    </div>
+
+    <h2>Education</h2>
     <p>
-        I am a graduate research assistant pursuing my PhD in Materials Science under <a href="http://me.gatech.edu/faculty/mcdowell">Dr. David L. McDowell</a> 
-        at the Georgia Institute of Technology. My expertise lies in physics-based atomistic and coarse-grained atomistic modeling of multicomponent alloys and 
-        fundamental deformation processes at the nanoscale. 
+    <ul>
+        <li>
+            <b>Georgia Institute of Technology</b> -- PhD Materials Science and Engineering (Projected 2022)
+        </li>
+        <li>
+            <b>University of California, Los Angeles</b> -- B.S. Materials Science and Engineering 2017
+        </li>
+    </ul>
     </p>
 
-
     <h2>Publications</h2>
-
     {{#each publications}}
     <div class="card mt-4">
         <div class="card-body">
@@ -62,7 +79,17 @@
     </div>
     {{/each}}
 
-    <h2>Research Experience</h2>
+    <h2>Conference presentations</h2>
+    {{#each presentations}}
+    <div class="card mt-4">
+        <div class="card-body">
+            {{{markdown contents }}}
+        </div>
+    </div>
+    {{/each}}
+
+
+    <h2>Research experience</h2>
     {{#each jobs}}
     <div class="card mb-4">
         <div class="card-body">
@@ -85,16 +112,7 @@
     </div>
     {{/each}}
 
-    <h2>Education</h2>
-    <p>
-    <ul>
-        <li>
-            <b>Georgia Institute of Technology</b> -- PhD Materials Science and Engineering (Expected 2022)
-        </li>
-        <li>
-            <b>University of California, Los Angeles</b> -- B.S. Materials Science and Engineering 2017</p>
-        </li>
-    </ul>
+
 
 
 </div>
