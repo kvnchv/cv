@@ -79,16 +79,6 @@
     </div>
     {{/each}}
 
-    <h2>Conference presentations</h2>
-    {{#each presentations}}
-    <div class="card mt-4">
-        <div class="card-body">
-            {{{markdown contents }}}
-        </div>
-    </div>
-    {{/each}}
-
-
     <h2>Research experience</h2>
     {{#each jobs}}
     <div class="card mb-4">
@@ -111,6 +101,38 @@
         </div>
     </div>
     {{/each}}
+
+    <h2>Teaching experience</h2> 
+    {{#each teaching}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }}
+                <small>
+                    {{ location }}
+                </small>
+            </h3>
+            <p class="text-muted">{{ date }}</p>
+
+            {{{markdown contents }}}
+
+            {{#if file}}
+            <p>
+                Certification<a href="{{ ../baseUrl }}{{ file }}"></a>
+            </p>
+            {{/if}}
+        </div>
+    </div>
+    {{/each}}
+
+    <h2>Conference presentations</h2>
+    {{#each presentations}}
+    <div class="card mt-4">
+        <div class="card-body">
+            {{{markdown contents }}}
+        </div>
+    </div>
+    {{/each}}
+
 
 
 

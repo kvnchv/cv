@@ -87,5 +87,41 @@ and derived critical film thickness relations and parameters.
 ### 2017
 * Zhou, X. W., Jones, R. E., & Chu, K. (2017). Polymorphic improvement of Stillinger-Weber potential for InGaN. Journal of Applied Physics, 122(23), 235703.`
     }
+  ],
+  teaching: [
+    {
+      title: 'CIRTL Associate',
+      location: 'Georgia Institute of Technology',
+      date: 'Awarded Fall 2020',
+      contents: `
+Completed foundational level [Tech to Teaching](https://ctl.gatech.edu/content/tech-teaching-0) certifications under with Georgia Tech Center for Teaching and Learning (CTL).
+
+* Fundamentals of Teaching and Learning
+* Course Design
+`,
+      file: 'cirtl2020.pdf'
+    },
+    {
+      title: "MSE Department Teaching Assitantship",
+      location: 'Georgia Institute of Technology',
+      date: 'Fall 2018-Present',
+      contents: `
+Teaching assistant for the following courses: 
+
+  * MSE 2001 - Principles and Applications of Engineering Materials (2018, 2019, 2020)
+  * MSE 3005 - Mechanical Behavior of Materials (2020)
+  `
+    },
+    {
+      title: "Teaching Practicum",
+      location: 'Georgia Institute of Technology',
+      date: 'Fall 2019',
+      contents: `
+Graduate-level course covering topics relevant to the skillset and mindset required for a faculty career path.
+
+* Delivered lecture materials for a module with the support of a dedicated faculty teaching mentor (MSE 3005).
+* Developed take-home assignments as well as a exam materials relevant to the delivered course segment 
+  `
+    }
   ]
 };
