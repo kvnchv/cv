@@ -1,5 +1,5 @@
 # Curriculum Vitae
-
+Find the web version [here](https://kvnchv.github.io/cv)
 Adapted from [this template](https://github.com/sneas/cv-template/generate). 
 
 ## Creating your own
